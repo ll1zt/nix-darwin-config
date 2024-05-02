@@ -5,9 +5,16 @@
     rm -f ~/.gitconfig
   '';
 
-  services.git-daemon = {
+  networking.firewall.allowedTCPPorts = [ 443 ];
+
+  programs.openssh = {
     enable = true;
-    port = 443;
+    client = {
+      extraConfig = ''
+        Host github.com
+          Port 443
+      '';
+    };
   };
 
   programs.git = {

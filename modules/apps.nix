@@ -64,6 +64,7 @@
       "loop"
       "appcleaner"
       "keka"
+      "aldente"
       # IM & audio & remote desktop & meeting
       #"telegram"
       #"discord"

@@ -1,9 +1,17 @@
-{ lib, ...}:
+{ lib, username, useremail, ...}:
 
 {
- #  home.activation.removeExistingGitconfig = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
- #  rm -f ~/.gitconfig
- #'';
+    home.activation.removeExistingGitconfig = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
+    rm -f ~/.gitconfig
+  '';
+
+  programs.git = {
+    enable = true;
+    userName = username;
+    userEmail = useremail;
+  };  
+}
+
 
  #programs.ssh = {
  #  enable = true;
@@ -15,10 +23,3 @@
  #    };
  #  };
  #};
-
-  programs.git = {
-    enable = true;
-    userName = "lllzt";
-    userEmail = "lllzt@pm.me";
-  }  
-}

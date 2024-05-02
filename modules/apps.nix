@@ -28,6 +28,7 @@
       # TecentMetting = 1484048379;
       # QQMusic = 595615424;
       LocalSend = 1661733229;
+      Bob = 1630034110;
     };
 
     taps = [
@@ -72,7 +73,6 @@
       "obsidian"
       "calibre" # ebook manager
       "parsec" # remote desktop
-      "bob"
       "command-x"
       #"anki"
       #"iina" # video player

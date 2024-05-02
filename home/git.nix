@@ -1,4 +1,4 @@
-{ lib, username, useremail, ...}:
+{ lib, ...}:
 
 {
  #  home.activation.removeExistingGitconfig = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
@@ -18,7 +18,7 @@
 
   programs.git = {
     enable = true;
-    userName = username;
-    userEmail = useremail;
+    userName = "lllzt";
+    userEmail = "lllzt@pm.me";
   }  
 }

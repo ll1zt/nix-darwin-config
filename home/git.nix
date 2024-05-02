@@ -5,15 +5,13 @@
     rm -f ~/.gitconfig
   '';
 
-  networking.firewall.allowedTCPPorts = [ 443 ];
-
-  programs.openssh = {
+  programs.ssh = {
     enable = true;
-    client = {
-      extraConfig = ''
-        Host github.com
-          Port 443
-      '';
+    settings = {
+      Host = "github.com";
+      HostName = "ssh.github.com";
+      User = "ll1zt";
+      Port = 443;
     };
   };
 

@@ -72,7 +72,7 @@
       "obsidian"
       "calibre" # ebook manager
       "parsec" # remote desktop
-
+      "bob"
       "command-x"
       #"anki"
       #"iina" # video player

@@ -9,6 +9,11 @@
     enable = true;
     userName = username;
     userEmail = useremail;
+    
+    ignores = [
+      ".idea" ".vs" ".vsc" ".vscode" # ide
+      ".DS_Store" # mac
+    ];
   };  
 }
 

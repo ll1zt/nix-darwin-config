@@ -5,6 +5,7 @@
         ./programs.nix
         ./shell.nix
         ./git.nix
+        #./yabai.nix
     ];
 
     home = {

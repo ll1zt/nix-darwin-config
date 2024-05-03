@@ -6,6 +6,7 @@
     git
     tree
     just
+    neofetch
   ];
   environment.variables.EDITOR = "nvim";
 

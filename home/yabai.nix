@@ -65,38 +65,27 @@
 
 
       # Navigate Windows
-      default < ctrl - k : yabai -m window --focus north
-      default < ctrl - j : yabai -m window --focus south
-      default < ctrl - l : yabai -m window --focus east
-      default < ctrl - h : yabai -m window --focus west
+      default < ctrl - k : /opt/homebrew/bin/yabai -m window --focus north
+      default < ctrl - j : /opt/homebrew/bin/yabai -m window --focus south
+      default < ctrl - l : /opt/homebrew/bin/yabai -m window --focus east
+      default < ctrl - h : /opt/homebrew/bin/yabai -m window --focus west
 
       # Swap windows
-      default < shift + ctrl - k : yabai -m window --swap north 
-      default < shift + ctrl - j : yabai -m window --swap south
-      default < shift + ctrl - l : yabai -m window --swap east
-      default < shift + ctrl - h : yabai -m window --swap west 
+      default < shift + ctrl - k : /opt/homebrew/bin/yabai -m window --swap north 
+      default < shift + ctrl - j : /opt/homebrew/bin/yabai -m window --swap south
+      default < shift + ctrl - l : /opt/homebrew/bin/yabai -m window --swap east
+      default < shift + ctrl - h : /opt/homebrew/bin/yabai -m window --swap west 
 
       # Spaces 1 - 9
-      default < ctrl - 1 : yabai -m space --focus 1 
-      default < ctrl - 2 : yabai -m space --focus 2 
-      default < ctrl - 3 : yabai -m space --focus 3 
-      default < ctrl - 4 : yabai -m space --focus 4 
-      default < ctrl - 5 : yabai -m space --focus 5 
-      default < ctrl - 6 : yabai -m space --focus 6 
-      default < ctrl - 7 : yabai -m space --focus 7 
-      default < ctrl - 8 : yabai -m space --focus 8 
-      default < ctrl - 9 : yabai -m space --focus 9
-
-
-      # fast focus desktop
-      # cmd + alt - x : yabai -m space --focus recent
-      #ctrl + alt - 1 : yabai -m space --focus 1
-
-      # send window to desktop and follow focus
-      # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
-      #ctrl + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-      #ctrl + alt - 2 : yabai -m space --focus 2 
-
+      default < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
+      default < ctrl - 2 : /opt/homebrew/bin/yabai -m space --focus 2 
+      default < ctrl - 3 : /opt/homebrew/bin/yabai -m space --focus 3 
+      default < ctrl - 4 : /opt/homebrew/bin/yabai -m space --focus 4 
+      default < ctrl - 5 : /opt/homebrew/bin/yabai -m space --focus 5 
+      default < ctrl - 6 : /opt/homebrew/bin/yabai -m space --focus 6 
+      default < ctrl - 7 : /opt/homebrew/bin/yabai -m space --focus 7 
+      default < ctrl - 8 : /opt/homebrew/bin/yabai -m space --focus 8 
+      default < ctrl - 9 : /opt/homebrew/bin/yabai -m space --focus 9
 
       # float / unfloat window and center on screen
       alt - t : /opt/homebrew/bin/yabai -m window --toggle float; \

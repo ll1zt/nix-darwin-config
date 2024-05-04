@@ -47,7 +47,7 @@
       #"curl" # no not install curl via nixpkgs, it's not working well on macOS!
       #"aria2" # download tool
       #"httpie" # http client
-
+      "yabai"
       ];
 
     # `brew install --cask`
@@ -82,7 +82,6 @@
       #"raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)
       "stats" # beautiful system monitor
       #"eudic" # 欧路词典
-      "yabai" # tiling window manager
       # Development
       #"insomnia" # REST client
       #"wireshark" # network analyzer

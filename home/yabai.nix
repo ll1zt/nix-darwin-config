@@ -24,7 +24,7 @@
       
     #  /opt/homebrew/bin/yabai -m config window_opacity_duration      2000.0   
       /opt/homebrew/bin/yabai -m config window_border                on
-      /opt/homebrew/bin/yabai -m config window_border_width          6
+      /opt/homebrew/bin/yabai -m config window_border_width          10
       /opt/homebrew/bin/yabai -m config active_window_border_color   0xff775759
       /opt/homebrew/bin/yabai -m config normal_window_border_color   0xff555555
     # /opt/homebrew/bin/yabai -m config insert_feedback_color        0xffd75f5f
@@ -59,8 +59,8 @@
     text = ''
 
       # Modes
-      :: default : /opt/homebrew/bin/yabai -m config active_window_border_color 0xffDF9A96
-      :: window  : /opt/homebrew/bin/yabai -m config active_window_border_color 0xffF3C992
+      :: default : # /opt/homebrew/bin/yabai -m config active_window_border_color 0xffDF9A96
+      :: window  : # /opt/homebrew/bin/yabai -m config active_window_border_color 0xffF3C992
 
       # Mode Switching  # 0x32 => `
       default < ctrl - 0x32 ; window 
@@ -101,11 +101,11 @@
       # Toggle Float 
       default < ctrl - t : /opt/homebrew/bin/yabai -m window --toggle float --grid 4:4:1:1:2:2
 
-    # Resize Windows
-    default < ctrl + shift - left : /opt/homebrew/bin/yabai -m window --resize left:-150:0 || /opt/homebrew/bin/yabai -m window --resize right:-150:0 || /opt/homebrew/bin/yabai -m window --resize left:150:0 || /opt/homebrew/bin/yabai -m window --resize right:150:0
-    default < ctrl + shift - right : /opt/homebrew/bin/yabai -m window --resize left:150:0 || /opt/homebrew/bin/yabai -m window --resize right:150:0 || /opt/homebrew/bin/yabai -m window --resize left:-150:0 || /opt/homebrew/bin/yabai -m window --resize right:-150:0
-    default < ctrl + shift - up : /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150 || /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150
-    default < ctrl + shift - down : /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150 || /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150
+      # Resize Windows
+      default < ctrl + shift - left : /opt/homebrew/bin/yabai -m window --resize left:-150:0 || /opt/homebrew/bin/yabai -m window --resize right:-150:0 || /opt/homebrew/bin/yabai -m window --resize left:150:0 || /opt/homebrew/bin/yabai -m window --resize right:150:0
+      default < ctrl + shift - right : /opt/homebrew/bin/yabai -m window --resize left:150:0 || /opt/homebrew/bin/yabai -m window --resize right:150:0 || /opt/homebrew/bin/yabai -m window --resize left:-150:0 || /opt/homebrew/bin/yabai -m window --resize right:-150:0
+      default < ctrl + shift - up : /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150 || /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150
+      default < ctrl + shift - down : /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150 || /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150
 
       # Spaces 1 - 9
       window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 

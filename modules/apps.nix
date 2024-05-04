@@ -36,7 +36,7 @@
       "homebrew/cask-fonts"
       "homebrew/services"
       "homebrew/cask-versions"
-      "mrkai77/tap"   
+      #"mrkai77/tap"   
       "koekeishiya/formulae"
     ];
 
@@ -64,7 +64,7 @@
       #"karabiner-elements"
       "picgo"
       "raycast"
-      "loop"
+      #"loop"
       "appcleaner"
       "keka"
       "aldente"

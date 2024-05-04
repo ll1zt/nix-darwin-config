@@ -71,12 +71,13 @@
 
       # fast focus desktop
       # cmd + alt - x : yabai -m space --focus recent
-      cmd + alt - 1 : yabai -m space --focus 1
+      ctrl + alt - 1 : yabai -m space --focus 1
 
       # send window to desktop and follow focus
       # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
-      shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-
+      #ctrl + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
+      ctrl + cmd - 2 : yabai -m space --focus 2 
+      
       # increase window size
       shift + alt - a : /opt/homebrew/bin/yabai -m window --resize left:-20:0
       shift + alt - s : /opt/homebrew/bin/yabai -m window --resize right:-20:0

@@ -60,11 +60,11 @@
 
       # Modes
       :: default : yabai -m config active_window_border_color 0xffDF9A96
-      :: window @ : yabai -m config active_window_border_color 0xffF3C992
+      :: window  : yabai -m config active_window_border_color 0xffF3C992
 
       # Mode Shortcuts
-      default < fn window 
-      window < fn default 
+      default < fn ; window 
+      window < fn ; default 
 
       # Navigate Windows
       default < ctrl - k : /opt/homebrew/bin/yabai -m window --focus north

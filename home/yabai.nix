@@ -76,7 +76,7 @@
       # send window to desktop and follow focus
       # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
       #ctrl + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-      ctrl + cmd - 2 : yabai -m space --focus 2 
+      ctrl + alt - 2 : yabai -m space --focus 2 
       
       # increase window size
       shift + alt - a : /opt/homebrew/bin/yabai -m window --resize left:-20:0

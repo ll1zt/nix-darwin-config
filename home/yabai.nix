@@ -59,7 +59,7 @@
     text = ''
 
       # Modes
-      :: default @ : yabai -m config active_window_border_color 0xffDF9A96
+      :: default : yabai -m config active_window_border_color 0xffDF9A96
       :: window @ : yabai -m config active_window_border_color 0xffF3C992
 
       # Mode Shortcuts

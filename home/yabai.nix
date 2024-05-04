@@ -71,12 +71,12 @@
 
       # fast focus desktop
       # cmd + alt - x : yabai -m space --focus recent
-      #ctrl + alt - 1 : yabai -m space --focus 1
+      ctrl + alt - 1 : yabai -m space --focus 1
 
       # send window to desktop and follow focus
       # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
       #ctrl + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-      #ctrl + alt - 2 : yabai -m space --focus 2 
+      ctrl + alt - 2 : yabai -m space --focus 2 
 
 
       # float / unfloat window and center on screen

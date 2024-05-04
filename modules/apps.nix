@@ -13,7 +13,7 @@
   homebrew = {
     enable = true;
     onActivation = {
-      autoUpdate = true;
+      autoUpdate = false;
       # 'zap': uninstalls all formulae(and related files) not listed here.
       cleanup = "zap";
     };
@@ -37,6 +37,7 @@
       "homebrew/services"
       "homebrew/cask-versions"
       "mrkai77/tap"   
+      "koekeishiya/formulae"
     ];
 
     # `brew install`
@@ -81,7 +82,7 @@
       #"raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)
       "stats" # beautiful system monitor
       #"eudic" # 欧路词典
-
+      "yabai" # tiling window manager
       # Development
       #"insomnia" # REST client
       #"wireshark" # network analyzer

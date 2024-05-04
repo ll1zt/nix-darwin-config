@@ -82,12 +82,12 @@
       # Zoom window
       default < ctrl - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
 
-      default < ctrl - p : /opt/homebrew/bin/yabai -m space --focus prev
-      default < ctrl - n : /opt/homebrew/bin/yabai -m space --focus next
+      default < ctrl + cmd - p : /opt/homebrew/bin/yabai -m space --focus prev
+      default < ctrl + cmd - n : /opt/homebrew/bin/yabai -m space --focus next
 
-      default < ctrl - 1 : /opt/homebrew/bin/yabai -m window --space 1; /opt/homebrew/bin/yabai -m space --focus 1  
-      default < ctrl - 2 : /opt/homebrew/bin/yabai -m window --space 2; /opt/homebrew/bin/yabai -m space --focus 2 
-      default < ctrl - 3 : /opt/homebrew/bin/yabai -m window --space 3; /opt/homebrew/bin/yabai -m space --focus 3 
+      default < ctrl + cmd - 1 : /opt/homebrew/bin/yabai -m window --space 1; /opt/homebrew/bin/yabai -m space --focus 1  
+      default < ctrl + cmd - 2 : /opt/homebrew/bin/yabai -m window --space 2; /opt/homebrew/bin/yabai -m space --focus 2 
+      default < ctrl + cmd - 3 : /opt/homebrew/bin/yabai -m window --space 3; /opt/homebrew/bin/yabai -m space --focus 3 
 
       # Spaces 1 - 9
       window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 

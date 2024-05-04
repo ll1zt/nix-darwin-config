@@ -57,26 +57,45 @@
   home.file.skhd = {
     target = ".config/skhd/skhdrc";
     text = ''
-      # focus window
-      alt - h : /opt/homebrew/bin/yabai -m window --focus west
-      alt - j : /opt/homebrew/bin/yabai -m window --focus south
-      alt - k : /opt/homebrew/bin/yabai -m window --focus north
-      alt - l : /opt/homebrew/bin/yabai -m window --focus east
 
-      # swap managed window
-      shift + alt - h : /opt/homebrew/bin/yabai -m window --swap west
-      shift + alt - j : /opt/homebrew/bin/yabai -m window --swap south
-      shift + alt - k : /opt/homebrew/bin/yabai -m window --swap north
-      shift + alt - l : /opt/homebrew/bin/yabai -m window --swap east
+    # Modes
+    :: default : sketchybar -m --set modal icon="N" icon.color="0xFF$(awk -F '0x21#0x1E' '/color4/{print $2}' ~/.Xresources)" background.color="0xFF$(awk -F '0x21#0x1E' '/background/{print $2}' ~/.Xresources)"
+    :: window @ : sketchybar -m --set modal icon="W" icon.color="0xFF$(awk -F '0x21#0x1E' '/background/{print $2}' ~/.Xresources)" background.color="0xFF$(awk -F '0x21#0x1E' '/color4/{print $2}' ~/.Xresources)"
+    :: scripts @ : sketchybar -m --set modal icon="S" icon.color="0xFF$(awk -F '0x21#0x1E' '/color0/{print $2}' ~/.Xresources)" background.color="0xFF$(awk -F '0x21#0x1E' '/color2/{print $2}' ~/.Xresources)"
+
+
+      # Navigate Windows
+      default < ctrl - k : yabai -m window --focus north
+      default < ctrl - j : yabai -m window --focus south
+      default < ctrl - l : yabai -m window --focus east
+      default < ctrl - h : yabai -m window --focus west
+
+      # Swap windows
+      default < shift + ctrl - k : yabai -m window --swap north 
+      default < shift + ctrl - j : yabai -m window --swap south
+      default < shift + ctrl - l : yabai -m window --swap east
+      default < shift + ctrl - h : yabai -m window --swap west 
+
+      # Spaces 1 - 9
+      default < ctrl - 1 : yabai -m space --focus 1 
+      default < ctrl - 2 : yabai -m space --focus 2 
+      default < ctrl - 3 : yabai -m space --focus 3 
+      default < ctrl - 4 : yabai -m space --focus 4 
+      default < ctrl - 5 : yabai -m space --focus 5 
+      default < ctrl - 6 : yabai -m space --focus 6 
+      default < ctrl - 7 : yabai -m space --focus 7 
+      default < ctrl - 8 : yabai -m space --focus 8 
+      default < ctrl - 9 : yabai -m space --focus 9
+
 
       # fast focus desktop
       # cmd + alt - x : yabai -m space --focus recent
-      ctrl + alt - 1 : yabai -m space --focus 1
+      #ctrl + alt - 1 : yabai -m space --focus 1
 
       # send window to desktop and follow focus
       # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
       #ctrl + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-      ctrl + alt - 2 : yabai -m space --focus 2 
+      #ctrl + alt - 2 : yabai -m space --focus 2 
 
 
       # float / unfloat window and center on screen

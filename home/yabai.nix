@@ -6,21 +6,23 @@
       #!/usr/bin/env sh
 
       # load scripting addition
-      sudo yabai --load-sa
-      yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-
-      yabai -m config layout bsp
-      yabai -m config auto_balance off
-      yabai -m config window_topmost on
-
-      yabai -m config top_padding    0
-      yabai -m config bottom_padding 0
-      yabai -m config left_padding   0
-      yabai -m config right_padding  0
-      yabai -m config window_gap     0
+      sudo /opt/homebrew/bin/yabai --load-sa
+      /opt/homebrew/bin/yabai -m signal --add event=dock_did_restart action="sudo /opt/homebrew/bin/yabai --load-sa"
+                  
+      # global settings
+      /opt/homebrew/bin/yabai -m config auto_balance off
+      /opt/homebrew/bin/yabai -m config window_topmost on
+                  
+      # general space settings
+      /opt/homebrew/bin/yabai -m config layout         bsp
+      /opt/homebrew/bin/yabai -m config top_padding    0
+      /opt/homebrew/bin/yabai -m config bottom_padding 0
+      /opt/homebrew/bin/yabai -m config left_padding   0
+      /opt/homebrew/bin/yabai -m config right_padding  0
+      /opt/homebrew/bin/yabai -m config window_gap     0
 
       # rules
-      yabai -m rule --add app="^System Preferences$" manage=off
+      /opt/homebrew/bin/yabai -m rule --add app="^System Preferences$" manage=off
 
       echo "yabai configuration loaded.."
     '';

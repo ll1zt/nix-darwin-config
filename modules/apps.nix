@@ -48,6 +48,7 @@
       #"aria2" # download tool
       #"httpie" # http client
       "yabai"
+      "skhd"
       ];
 
     # `brew install --cask`

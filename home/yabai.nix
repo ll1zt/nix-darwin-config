@@ -22,7 +22,7 @@
       /opt/homebrew/bin/yabai -m config active_window_opacity        1.0
       /opt/homebrew/bin/yabai -m config normal_window_opacity        0.85
       
-      /opt/homebrew/bin/yabai -m config window_opacity_duration      2000.0   
+    #  /opt/homebrew/bin/yabai -m config window_opacity_duration      2000.0   
       /opt/homebrew/bin/yabai -m config window_border                on
       /opt/homebrew/bin/yabai -m config window_border_width          6
       /opt/homebrew/bin/yabai -m config active_window_border_color   0xff775759

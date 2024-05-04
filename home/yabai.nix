@@ -101,6 +101,12 @@
       # Toggle Float 
       default < ctrl - t : /opt/homebrew/bin/yabai -m window --toggle float --grid 4:4:1:1:2:2
 
+    # Resize Windows
+    default < ctrl + shift - left : /opt/homebrew/bin/yabai -m window --resize left:-150:0 || /opt/homebrew/bin/yabai -m window --resize right:-150:0 || /opt/homebrew/bin/yabai -m window --resize left:150:0 || /opt/homebrew/bin/yabai -m window --resize right:150:0
+    default < ctrl + shift - right : /opt/homebrew/bin/yabai -m window --resize left:150:0 || /opt/homebrew/bin/yabai -m window --resize right:150:0 || /opt/homebrew/bin/yabai -m window --resize left:-150:0 || /opt/homebrew/bin/yabai -m window --resize right:-150:0
+    default < ctrl + shift - up : /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150 || /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150
+    default < ctrl + shift - down : /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150 || /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150
+
       # Spaces 1 - 9
       window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
       window < ctrl - 2 : /opt/homebrew/bin/yabai -m space --focus 2 

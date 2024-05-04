@@ -82,12 +82,24 @@
       # Zoom window
       default < ctrl - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
 
-      default < ctrl + cmd - p : /opt/homebrew/bin/yabai -m space --focus prev
-      default < ctrl + cmd - n : /opt/homebrew/bin/yabai -m space --focus next
+      # Navigate Spaces : 0x21 => [ 0x1E => ]
+      default < ctrl + shift - 0x21 : /opt/homebrew/bin/yabai -m space --focus prev
+      default < ctrl + shift - 0x1E : /opt/homebrew/bin/yabai -m space --focus next
 
+      # Follow window to prev/next space  : 0x21 => [ 0x1E => ]
+      default < ctrl + alt - 0x21 : /opt/homebrew/bin/yabai -m window --space prev; yabai -m /opt/homebrew/bin/space --focus prev
+      default < ctrl + alt - 0x1E : /opt/homebrew/bin/yabai -m window --space next; /opt/homebrew/bin/yabai -m space --focus next
+
+      #follow window to space 1 - 3
       default < ctrl + cmd - 1 : /opt/homebrew/bin/yabai -m window --space 1; /opt/homebrew/bin/yabai -m space --focus 1  
       default < ctrl + cmd - 2 : /opt/homebrew/bin/yabai -m window --space 2; /opt/homebrew/bin/yabai -m space --focus 2 
       default < ctrl + cmd - 3 : /opt/homebrew/bin/yabai -m window --space 3; /opt/homebrew/bin/yabai -m space --focus 3 
+
+      # Rotate Windows 
+      default < ctrl - r : /opt/homebrew/bin/yabai -m space --rotate 270
+
+      # Toggle Float 
+      default < ctrl - t : /opt/homebrew/bin/yabai -m window --toggle float --grid 4:4:1:1:2:2
 
       # Spaces 1 - 9
       window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
@@ -111,13 +123,6 @@
       window < ctrl + cmd - 8 : /opt/homebrew/bin/yabai -m window --space 8 
       window < ctrl + cmd - 9 : /opt/homebrew/bin/yabai -m window --space 9
 
-
-
-
-
-      # float / unfloat window and center on screen
-      default < alt - t : /opt/homebrew/bin/yabai -m window --toggle float; \
-                /opt/homebrew/bin/yabai -m window --grid 4:4:1:1:2:2
 
     '';
   };

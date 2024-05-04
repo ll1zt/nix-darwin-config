@@ -22,11 +22,11 @@
       /opt/homebrew/bin/yabai -m config active_window_opacity        1.0
       /opt/homebrew/bin/yabai -m config normal_window_opacity        0.85
       
-    # /opt/homebrew/bin/yabai -m config window_opacity_duration      2000.0   
-    # /opt/homebrew/bin/yabai -m config window_border                off
-    # /opt/homebrew/bin/yabai -m config window_border_width          6
-    # /opt/homebrew/bin/yabai -m config active_window_border_color   0xff775759
-    # /opt/homebrew/bin/yabai -m config normal_window_border_color   0xff555555
+      /opt/homebrew/bin/yabai -m config window_opacity_duration      2000.0   
+      /opt/homebrew/bin/yabai -m config window_border                on
+      /opt/homebrew/bin/yabai -m config window_border_width          6
+      /opt/homebrew/bin/yabai -m config active_window_border_color   0xff775759
+      /opt/homebrew/bin/yabai -m config normal_window_border_color   0xff555555
     # /opt/homebrew/bin/yabai -m config insert_feedback_color        0xffd75f5f
 
 
@@ -58,11 +58,13 @@
     target = ".config/skhd/skhdrc";
     text = ''
 
-    # Modes
-    :: default : sketchybar -m --set modal icon="N" icon.color="0xFF$(awk -F '0x21#0x1E' '/color4/{print $2}' ~/.Xresources)" background.color="0xFF$(awk -F '0x21#0x1E' '/background/{print $2}' ~/.Xresources)"
-    :: window @ : sketchybar -m --set modal icon="W" icon.color="0xFF$(awk -F '0x21#0x1E' '/background/{print $2}' ~/.Xresources)" background.color="0xFF$(awk -F '0x21#0x1E' '/color4/{print $2}' ~/.Xresources)"
-    :: scripts @ : sketchybar -m --set modal icon="S" icon.color="0xFF$(awk -F '0x21#0x1E' '/color0/{print $2}' ~/.Xresources)" background.color="0xFF$(awk -F '0x21#0x1E' '/color2/{print $2}' ~/.Xresources)"
+      # Modes
+      :: default @ : yabai -m config active_window_border_color 0xffDF9A96
+      :: window @ : yabai -m config active_window_border_color 0xffF3C992
 
+      # Mode Shortcuts
+      default < fn window 
+      window < fn default 
 
       # Navigate Windows
       default < ctrl - k : /opt/homebrew/bin/yabai -m window --focus north
@@ -77,18 +79,18 @@
       default < shift + ctrl - h : /opt/homebrew/bin/yabai -m window --swap west 
 
       # Spaces 1 - 9
-      default < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
-      default < ctrl - 2 : /opt/homebrew/bin/yabai -m space --focus 2 
-      default < ctrl - 3 : /opt/homebrew/bin/yabai -m space --focus 3 
-      default < ctrl - 4 : /opt/homebrew/bin/yabai -m space --focus 4 
-      default < ctrl - 5 : /opt/homebrew/bin/yabai -m space --focus 5 
-      default < ctrl - 6 : /opt/homebrew/bin/yabai -m space --focus 6 
-      default < ctrl - 7 : /opt/homebrew/bin/yabai -m space --focus 7 
-      default < ctrl - 8 : /opt/homebrew/bin/yabai -m space --focus 8 
-      default < ctrl - 9 : /opt/homebrew/bin/yabai -m space --focus 9
+      window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
+      window < ctrl - 2 : /opt/homebrew/bin/yabai -m space --focus 2 
+      window < ctrl - 3 : /opt/homebrew/bin/yabai -m space --focus 3 
+      window < ctrl - 4 : /opt/homebrew/bin/yabai -m space --focus 4 
+      window < ctrl - 5 : /opt/homebrew/bin/yabai -m space --focus 5 
+      window < ctrl - 6 : /opt/homebrew/bin/yabai -m space --focus 6 
+      window < ctrl - 7 : /opt/homebrew/bin/yabai -m space --focus 7 
+      window < ctrl - 8 : /opt/homebrew/bin/yabai -m space --focus 8 
+      window < ctrl - 9 : /opt/homebrew/bin/yabai -m space --focus 9
 
       # float / unfloat window and center on screen
-      alt - t : /opt/homebrew/bin/yabai -m window --toggle float; \
+      default < alt - t : /opt/homebrew/bin/yabai -m window --toggle float; \
                 /opt/homebrew/bin/yabai -m window --grid 4:4:1:1:2:2
 
     '';

@@ -71,11 +71,11 @@
 
       # fast focus desktop
       # cmd + alt - x : yabai -m space --focus recent
-      # cmd + alt - 1 : yabai -m space --focus 1
+      cmd + alt - 1 : yabai -m space --focus 1
 
       # send window to desktop and follow focus
       # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
-      # shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
+      shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
 
       # increase window size
       shift + alt - a : /opt/homebrew/bin/yabai -m window --resize left:-20:0
@@ -91,7 +91,7 @@
                 /opt/homebrew/bin/yabai -m window --grid 4:4:1:1:2:2
 
       # toggle sticky(+float), topmost, picture-in-picture
-      alt - p : /opt/homebrew/bin/yabai -m window --toggle sticky; \
+      #alt - p : /opt/homebrew/bin/yabai -m window --toggle sticky; \
                 /opt/homebrew/bin/yabai -m window --toggle topmost; \
                 /opt/homebrew/bin/yabai -m window --toggle pip
     '';

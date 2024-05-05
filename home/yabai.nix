@@ -65,7 +65,7 @@
       # Mode Switching  # 0x32 => `
       #default < ctrl - 0x32 ; window 
       #window < ctrl - 0x32 ; default
-      ctrl - 0x32 : ctrl - alt - space
+      default < ctrl - 0x32 : ctrl - alt - space
 
 
 

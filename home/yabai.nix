@@ -60,11 +60,13 @@
 
       # Modes
       :: default : # /opt/homebrew/bin/yabai -m config active_window_border_color 0xffDF9A96
-      :: window  : # /opt/homebrew/bin/yabai -m config active_window_border_color 0xffF3C992
+      #:: window  : # /opt/homebrew/bin/yabai -m config active_window_border_color 0xffF3C992
 
       # Mode Switching  # 0x32 => `
-      default < ctrl - 0x32 ; window 
-      window < ctrl - 0x32 ; default
+      #default < ctrl - 0x32 ; window 
+      #window < ctrl - 0x32 ; default
+      ctrl - 0x32 : ctrl - alt - space
+
 
 
       # Navigate Windows
@@ -108,26 +110,26 @@
       default < ctrl + shift - down : /opt/homebrew/bin/yabai -m window --resize top:0:150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:150 || /opt/homebrew/bin/yabai -m window --resize top:0:-150 || /opt/homebrew/bin/yabai -m window --resize bottom:0:-150
 
       # Spaces 1 - 9
-      window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
-      window < ctrl - 2 : /opt/homebrew/bin/yabai -m space --focus 2 
-      window < ctrl - 3 : /opt/homebrew/bin/yabai -m space --focus 3 
-      window < ctrl - 4 : /opt/homebrew/bin/yabai -m space --focus 4 
-      window < ctrl - 5 : /opt/homebrew/bin/yabai -m space --focus 5 
-      window < ctrl - 6 : /opt/homebrew/bin/yabai -m space --focus 6 
-      window < ctrl - 7 : /opt/homebrew/bin/yabai -m space --focus 7 
-      window < ctrl - 8 : /opt/homebrew/bin/yabai -m space --focus 8 
-      window < ctrl - 9 : /opt/homebrew/bin/yabai -m space --focus 9
+     #window < ctrl - 1 : /opt/homebrew/bin/yabai -m space --focus 1 
+     #window < ctrl - 2 : /opt/homebrew/bin/yabai -m space --focus 2 
+     #window < ctrl - 3 : /opt/homebrew/bin/yabai -m space --focus 3 
+     #window < ctrl - 4 : /opt/homebrew/bin/yabai -m space --focus 4 
+     #window < ctrl - 5 : /opt/homebrew/bin/yabai -m space --focus 5 
+     #window < ctrl - 6 : /opt/homebrew/bin/yabai -m space --focus 6 
+     #window < ctrl - 7 : /opt/homebrew/bin/yabai -m space --focus 7 
+     #window < ctrl - 8 : /opt/homebrew/bin/yabai -m space --focus 8 
+     #window < ctrl - 9 : /opt/homebrew/bin/yabai -m space --focus 9
 
-      # Move Window space 1 - 9
-      window < ctrl + cmd - 1 : /opt/homebrew/bin/yabai -m window --space 1 
-      window < ctrl + cmd - 2 : /opt/homebrew/bin/yabai -m window --space 2 
-      window < ctrl + cmd - 3 : /opt/homebrew/bin/yabai -m window --space 3 
-      window < ctrl + cmd - 4 : /opt/homebrew/bin/yabai -m window --space 4 
-      window < ctrl + cmd - 5 : /opt/homebrew/bin/yabai -m window --space 5 
-      window < ctrl + cmd - 6 : /opt/homebrew/bin/yabai -m window --space 6 
-      window < ctrl + cmd - 7 : /opt/homebrew/bin/yabai -m window --space 7 
-      window < ctrl + cmd - 8 : /opt/homebrew/bin/yabai -m window --space 8 
-      window < ctrl + cmd - 9 : /opt/homebrew/bin/yabai -m window --space 9
+     ## Move Window space 1 - 9
+     #window < ctrl + cmd - 1 : /opt/homebrew/bin/yabai -m window --space 1 
+     #window < ctrl + cmd - 2 : /opt/homebrew/bin/yabai -m window --space 2 
+     #window < ctrl + cmd - 3 : /opt/homebrew/bin/yabai -m window --space 3 
+     #window < ctrl + cmd - 4 : /opt/homebrew/bin/yabai -m window --space 4 
+     #window < ctrl + cmd - 5 : /opt/homebrew/bin/yabai -m window --space 5 
+     #window < ctrl + cmd - 6 : /opt/homebrew/bin/yabai -m window --space 6 
+     #window < ctrl + cmd - 7 : /opt/homebrew/bin/yabai -m window --space 7 
+     #window < ctrl + cmd - 8 : /opt/homebrew/bin/yabai -m window --space 8 
+     #window < ctrl + cmd - 9 : /opt/homebrew/bin/yabai -m window --space 9
 
 
     '';

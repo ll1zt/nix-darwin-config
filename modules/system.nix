@@ -17,7 +17,7 @@
       dock = {
         autohide = true;
         show-recents = false;  # disable recent apps
-        orientation = "right";  # dock position
+        orientation = "bottom";  # dock position
 
         # customize Hot Corners(触发角, 鼠标移动到屏幕角落时触发的动作)
         wvous-tl-corner = 1;  # top-left - Mission Control

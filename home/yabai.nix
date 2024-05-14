@@ -66,7 +66,7 @@
       #default < ctrl - 0x32 ; window 
       #window < ctrl - 0x32 ; default
 
-      default < escape : ctrl - ';'
+      default < ctrl - 0x29 : escape
 
       # Navigate Windows
       default < ctrl - k : /opt/homebrew/bin/yabai -m window --focus north

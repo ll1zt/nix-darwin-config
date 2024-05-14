@@ -78,6 +78,7 @@
       "parsec" # remote desktop
       "command-x"
       "Itsycal"
+      "squirrel"
       #"anki"
       #"iina" # video player
       #"raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)

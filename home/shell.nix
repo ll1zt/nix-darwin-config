@@ -6,4 +6,9 @@
         enableCompletion = true;
     };
 
+    programs.kitty = {
+        enable = true;
+        
+    };
+
 }

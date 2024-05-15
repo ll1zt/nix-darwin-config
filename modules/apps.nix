@@ -79,6 +79,7 @@
       "command-x"
       "Itsycal"
       "squirrel"
+      "karabiner-elements"
       #"anki"
       #"iina" # video player
       #"raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)

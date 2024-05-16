@@ -1,14 +1,14 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs, lib, ... }:
 
 let
-  rimeSrc = pkgs.fetchGit {
+  rime-data = builtins.fetchGit {
     url = "https://github.com/ll1zt/Rime";
-    rev = "main"; # 使用最新的 master 分支
+    ref = "main";
   };
 in
 {
   home.file."Library/Rime" = {
-    source = rimeSrc;
+    source = rime-data;
     recursive = true;
     force = true;
   };

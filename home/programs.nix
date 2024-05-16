@@ -5,7 +5,6 @@
   home.packages = with pkgs; [
     yazi
     pandoc
-    git
   ];
 
   programs = {

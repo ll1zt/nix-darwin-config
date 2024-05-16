@@ -11,7 +11,7 @@
     run rm -rf "$HOME/Library/Rime"/*
 
     # 克隆Git仓库
-    run git clone https://github.com/ll1zt/Rime "$tempDir"
+    run /etc/profiles/per-user/lllzt/bin/git clone https://github.com/ll1zt/Rime "$tempDir"
 
     # 复制文件
     run cp -r "$tempDir"/* "$HOME/Library/Rime"

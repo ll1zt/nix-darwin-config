@@ -6,7 +6,7 @@
     text = let
       # 你可以选择在Nix store中临时存储这个仓库或者直接在家目录下操作
       # 这里使用的是直接在家目录下操作的方式
-      tempDir = "/Temporary /rime-config";
+      tempDir = "/Temporary/rime-config";
     in ''
       # 确保目标目录存在
       mkdir -p $HOME/Library/Rime

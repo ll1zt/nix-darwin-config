@@ -1,28 +1,22 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
-  home.activation.copyRimeConfig = {
-    before = [ "linkGeneration" ];  # 确保在链接生成之前执行
-    text = ''
-      # 设定临时目录
-      tempDir="/tmp/rime-config";
+  home.activation.copyRimeConfig = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    tempDir="/tmp/rime-config"
 
-      # 确保目标目录存在
-      mkdir -p "$HOME/Library/Rime";
+    # 确保目标目录存在
+    run mkdir -p "$HOME/Library/Rime"
 
-      # 如果已经存在配置，可以选择备份或删除
-      if [ -d "$HOME/Library/Rime" ]; then
-        rm -rf "$HOME/Library/Rime"/*;
-      fi
+    # 如果已经存在配置，可以选择备份或删除
+    run rm -rf "$HOME/Library/Rime"/*
 
-      # 克隆Git仓库
-      git clone https://github.com/ll1zt/Rime "$tempDir";
+    # 克隆Git仓库
+    run git clone https://github.com/ll1zt/Rime "$tempDir"
 
-      # 复制文件
-      cp -r "$tempDir"/* "$HOME/Library/Rime/";
+    # 复制文件
+    run cp -r "$tempDir"/* "$HOME/Library/Rime"
 
-      # 清理临时目录
-      rm -rf "$tempDir";
-    '';
-  };
+    # 清理临时目录
+    run rm -rf "$tempDir"
+  '';
 }

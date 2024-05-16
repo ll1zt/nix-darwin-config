@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ pkgs, lib, ... }: 
 
 {
   environment.systemPackages = with pkgs; [
@@ -8,16 +8,7 @@
     just
     neofetch
   ];
-
   environment.variables.EDITOR = "nvim";
-
-  home.sessionVariables = {
-    PATH = lib.concatStringsSep ":" [
-      "${pkgs.git}/bin"
-      "/usr/bin"
-      "/bin"
-    ];
-  };
 
   homebrew = {
     enable = true;

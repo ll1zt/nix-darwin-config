@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, username, ... }:
 
 {
   home.activation.copyRimeConfig = lib.hm.dag.entryAfter ["writeBoundary"] ''
@@ -12,7 +12,7 @@
     run rm -rf "$HOME/Library/Rime"/*
 
     # 克隆Git仓库
-    run git clone https://github.com/ll1zt/Rime "$tempDir"
+    run /etc/profiles/per-user/${username}/bin/git clone https://github.com/ll1zt/Rime "$tempDir"
 
     # 复制文件
     run cp -r "$tempDir"/* "$HOME/Library/Rime"

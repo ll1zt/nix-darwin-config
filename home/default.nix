@@ -6,7 +6,7 @@
         ./shell.nix
         ./git.nix
         ./yabai.nix
-        ./rime-squirrel.nix
+        #./rime-squirrel.nix
     ];
 
     home = {

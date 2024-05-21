@@ -81,6 +81,7 @@
       "squirrel"
       "karabiner-elements"
       "picgo"
+      "vivaldi"
       #"anki"
       #"iina" # video player
       #"raycast" # (HotKey: alt/option + space)search, caculate and run scripts(with many plugins)

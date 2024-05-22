@@ -57,7 +57,7 @@
       #"arc"
       "wechat"
       "qq"
-      "brave-browser"
+      #"brave-browser"
       "visual-studio-code"
       #"alfred"
       "hiddenbar"

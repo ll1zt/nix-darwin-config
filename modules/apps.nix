@@ -33,33 +33,33 @@
     # `brew install`
     brews = [
       "yabai"
-      #"skhd"
       ];
 
     # `brew install --cask`
     casks = [
-      "wechat"
-      "qq"
-      "visual-studio-code"
-      "plistedit-pro"
-      "hiddenbar"
-      "ticktick"
-      "picgo"
-      "raycast"
-      "appcleaner"
-      "keka"
-      "aldente"
-      "dingtalk"
-      "obsidian"
+      "dingtalk" # Teamwork app by Alibaba Group
+      "qq" # messaging tool
+      "wechat" # messaging tool
+
       "calibre" # ebook manager
+      "obsidian" # Knowledge base --markdown
+      "spotify" # Music streaming service
+      "ticktick" #To-do & task list manager
+      "visual-studio-code" # Open-source code editor
+      "vivaldi" # Web browser
+
+      "aldente" # tool to limit maximum charging percentage
+      "appcleaner" # Application uninstaller
+      "command-x" # Cut and paste files in Finder
+      "hiddenbar" # Utility to hide menu bar items
+      "Itsycal" # Menu bar calendar
+      "karabiner-elements" # Keyboard customiser
+      "keka" # File archiver
       "parsec" # remote desktop
-      "command-x"
-      "Itsycal"
-      "squirrel"
-      "karabiner-elements"
-      "picgo"
-      "vivaldi"
-      "spotify"
+      "picgo" # Tool for uploading images
+      "plistedit-pro" # Property list and JSON editor
+      "raycast" # Control your tools with a few keystrokes
+      "squirrel" # Rime input method engine
       "stats" # beautiful system monitor
     ];
   };

@@ -7,6 +7,7 @@
         ./git.nix
         ./yabai.nix
         ./yazi.nix
+        ./kitty.nix
         #./rime-squirrel.nix
     ];
 

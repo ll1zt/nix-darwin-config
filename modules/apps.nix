@@ -55,6 +55,7 @@
       "Itsycal" # Menu bar calendar
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
+      "lulu" # firewall to block unknown outgoing connections
       "parsec" # remote desktop
       "picgo" # Tool for uploading images
       "plistedit-pro" # Property list and JSON editor

@@ -6,6 +6,7 @@
         ./shell.nix
         ./git.nix
         ./yabai.nix
+        ./yazi.nix
         #./rime-squirrel.nix
     ];
 

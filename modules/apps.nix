@@ -21,7 +21,7 @@
     masApps = {
       LocalSend = 1661733229;
       Bob = 1630034110;
-      Quantumult X = 1443988620;
+      QuantumultX  = 1443988620;
     };
 
     taps = [

@@ -58,6 +58,7 @@
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
       "lulu" # firewall to block unknown outgoing connections
+      "nrlquaker-winbox" # MikroTik Winbox
       "parsec" # remote desktop
       "picgo" # Tool for uploading images
       "plistedit-pro" # Property list and JSON editor

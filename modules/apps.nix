@@ -44,6 +44,7 @@
       "wechat" # messaging tool
 
       "calibre" # ebook manager
+      "intellij-idea" # Java IDE
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service
       "ticktick" #To-do & task list manager

@@ -22,7 +22,7 @@
       LocalSend = 1661733229;
       Bob = 1630034110;
       QuantumultX  = 1443988620;
-      NetNewsWire = 1480640210;
+      # NetNewsWire = 1480640210;
     };
 
     taps = [
@@ -60,6 +60,7 @@
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
       "lulu" # firewall to block unknown outgoing connections
+      "netnewswire" # RSS reader
       "nrlquaker-winbox" # MikroTik Winbox
       "parsec" # remote desktop
       "picgo" # Tool for uploading images

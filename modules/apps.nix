@@ -52,6 +52,7 @@
       "ticktick" #To-do & task list manager
       "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
+      "vlc" # Media player
 
       "aldente" # tool to limit maximum charging percentage
       "appcleaner" # Application uninstaller

@@ -55,6 +55,7 @@
       "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
       "vlc" # Media player
+      "xmind" # Mind mapping tool
 
       "aldente" # tool to limit maximum charging percentage
       "appcleaner" # Application uninstaller

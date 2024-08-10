@@ -73,6 +73,7 @@
       "raycast" # Control your tools with a few keystrokes
       "squirrel" # Rime input method engine
       "stats" # beautiful system monitor
+      "termius" # SSH client
     ];
   };
 }

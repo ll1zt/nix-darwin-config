@@ -74,7 +74,7 @@
       "squirrel" # Rime input method engine
       "stats" # beautiful system monitor
       "termius" # SSH client
-      "wireshark" # Network protocol analyzer
+      "wireshark"
     ];
   };
 }

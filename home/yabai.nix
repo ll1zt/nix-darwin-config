@@ -6,8 +6,8 @@
       #!/usr/bin/env sh
 
       # load scripting addition
-      sudo /opt/homebrew/bin/yabai --load-sa
       /opt/homebrew/bin/yabai -m signal --add event=dock_did_restart action="sudo /opt/homebrew/bin/yabai --load-sa"
+      sudo /opt/homebrew/bin/yabai --load-sa
                   
       # global settings
       

@@ -36,7 +36,7 @@
     # `brew install`
     brews = [
       "yabai"
-      "mysql"
+      #"mysql"
       ];
 
     # `brew install --cask`
@@ -46,7 +46,7 @@
       "wechat" # messaging tool
 
       "calibre" # ebook manager
-      "chatgpt" # AI chatbot
+      #"chatgpt" # AI chatbot
       "intellij-idea-ce" # Java IDE
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service

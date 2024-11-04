@@ -65,7 +65,7 @@
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
       "lulu" # firewall to block unknown outgoing connections
-      "netnewswire" # RSS reader
+      #"netnewswire" # RSS reader
       "nrlquaker-winbox" # MikroTik Winbox
       "parsec" # remote desktop
       "picgo" # Tool for uploading images

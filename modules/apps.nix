@@ -36,6 +36,7 @@
     # `brew install`
     brews = [
       "yabai"
+      "tomcat"
       #"mysql"
       ];
 

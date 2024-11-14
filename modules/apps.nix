@@ -37,6 +37,7 @@
     brews = [
       "yabai"
       "tomcat"
+      "maven"
       #"mysql"
       ];
 

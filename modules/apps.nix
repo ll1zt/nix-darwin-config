@@ -38,6 +38,8 @@
       "yabai"
       "tomcat"
       "maven"
+      "pyvim"
+      "pyright"
       #"mysql"
       ];
 
@@ -61,6 +63,7 @@
 
       "aldente" # tool to limit maximum charging percentage
       "appcleaner" # Application uninstaller
+      "crossover" # Run Windows apps on macOS
       "command-x" # Cut and paste files in Finder
       "hiddenbar" # Utility to hide menu bar items
       "Itsycal" # Menu bar calendar

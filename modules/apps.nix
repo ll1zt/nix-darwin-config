@@ -7,6 +7,7 @@
     tree
     just
     neofetch
+    wget
   ];
   environment.variables.EDITOR = "nvim";
 

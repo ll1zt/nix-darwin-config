@@ -167,17 +167,5 @@
   # time.timeZone = "Asia/shanghai";
 
   # Fonts
-  fonts.packages = with pkgs; [
-    # icon fonts
-    material-design-icons
-    font-awesome
-
-    # nerd fonts - using new package structure
-    nerd-fonts.symbols # replaces "NerdFontsSymbolsOnly"
-    nerd-fonts.firaCode
-    nerd-fonts.jetbrainsMono
-    nerd-fonts.iosevka
-  ];
-
   
 }

@@ -41,7 +41,7 @@
       "maven"
       "pyvim"
       "pyright"
-      "mysql"
+      "mysql@8.4"
       ];
 
     # `brew install --cask`

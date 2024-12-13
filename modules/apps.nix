@@ -8,6 +8,7 @@
     just
     neofetch
     wget
+    mysql84
   ];
   environment.variables.EDITOR = "nvim";
 

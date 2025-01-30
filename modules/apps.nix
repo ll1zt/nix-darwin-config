@@ -70,6 +70,7 @@
       "Itsycal" # Menu bar calendar
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
+      "kindle" # E-book reader
       "lulu" # firewall to block unknown outgoing connections
       #"netnewswire" # RSS reader
       "nrlquaker-winbox" # MikroTik Winbox

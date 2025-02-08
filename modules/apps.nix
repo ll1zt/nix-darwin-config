@@ -53,6 +53,7 @@
       "anki"
       "calibre" # ebook manager
       #"chatgpt" # AI chatbot
+      "chatwise"
       "intellij-idea-ce" # Java IDE
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service

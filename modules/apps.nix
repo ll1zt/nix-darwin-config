@@ -50,6 +50,7 @@
       "qq" # messaging tool
       "wechat" # messaging tool
 
+      "anki"
       "calibre" # ebook manager
       #"chatgpt" # AI chatbot
       "intellij-idea-ce" # Java IDE

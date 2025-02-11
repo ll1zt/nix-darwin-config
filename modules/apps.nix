@@ -41,6 +41,8 @@
       "maven"
       "pyvim"
       "pyright"
+      #"lua-language-server"
+      "gnu-tar"
       ##"mysql@8.4"
       ];
 

@@ -38,7 +38,7 @@
     # `brew install`
     brews = [
       "yabai"
-      "tomcat"
+      /* "tomcat" */
       /* "maven" */
       /* "pyvim" */
       /* "pyright" */
@@ -54,10 +54,10 @@
       "wechat" # messaging tool
 
       "anki"
-      "calibre" # ebook manager
+      /* "calibre" # ebook manager */
       #"chatgpt" # AI chatbot
       "chatwise"
-      "cherry-studio"
+      /* "cherry-studio" */
       "intellij-idea-ce" # Java IDE
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service
@@ -70,7 +70,7 @@
 
       "aldente" # tool to limit maximum charging percentage
       "appcleaner" # Application uninstaller
-      "crossover" # Run Windows apps on macOS
+      /* "crossover" # Run Windows apps on macOS */
       "command-x" # Cut and paste files in Finder
       "hiddenbar" # Utility to hide menu bar items
       "Itsycal" # Menu bar calendar
@@ -79,7 +79,7 @@
       "kindle" # E-book reader
       "lulu" # firewall to block unknown outgoing connections
       #"netnewswire" # RSS reader
-      "nrlquaker-winbox" # MikroTik Winbox
+      /* "nrlquaker-winbox" # MikroTik Winbox */
       "parsec" # remote desktop
       "picgo" # Tool for uploading images
       "plistedit-pro" # Property list and JSON editor
@@ -88,7 +88,7 @@
       "stats" # beautiful system monitor
       "steam" # Gaming platform
       "termius" # SSH client
-      "wireshark"
+      /* "wireshark" */
     ];
   };
 }

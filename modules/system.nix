@@ -3,6 +3,7 @@
 {
 
   system = {
+    stateVersion = 5;
     # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.
     activationScripts.postUserActivation.text = ''
       # activateSettings -u will reload the settings from the database and apply them to the current session,
@@ -140,7 +141,7 @@
       enableKeyMapping = true;  # enable key mapping so that we can use `option` as `control`
 
       # NOTE: do NOT support remap capslock to both control and escape at the same time
-      remapCapsLockToControl = true;  # remap caps lock to control, useful for emac users
+      remapCapsLockToControl = false;  # remap caps lock to control, useful for emac users
       remapCapsLockToEscape  = false;   # remap caps lock to escape, useful for vim users
 
       # swap left command and left alt 
@@ -167,5 +168,24 @@
   # time.timeZone = "Asia/shanghai";
 
   # Fonts
-  
+  fonts = {
+    packages = with pkgs; [
+      # icon fonts
+      material-design-icons
+      font-awesome
+
+      # nerdfonts
+      # https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/data/fonts/nerdfonts/shas.nix
+      (nerdfonts.override {
+        fonts = [
+          # symbols icon only
+          "NerdFontsSymbolsOnly"
+          # Characters
+          "FiraCode"
+          "JetBrainsMono"
+          "Iosevka"
+        ];
+      })
+    ];
+  };
 }

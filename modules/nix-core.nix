@@ -2,7 +2,7 @@
 
 {
     # Necessary for using flakes on this system.
-    nix.settings.experimental-features = "nix-command flakes";
+    nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
     nixpkgs.config.allowUnfree = true;
 
@@ -15,10 +15,10 @@
 
     # Used for backwards compatibility, please read the changelog before changing.
     # $ darwin-rebuild changelog
-    system.stateVersion = 4;
+    /* system.stateVersion = 4; */
 
     # The platform the configuration will be used on.
-    nixpkgs.hostPlatform = "aarch64-darwin";
+    /* nixpkgs.hostPlatform = "aarch64-darwin"; */
 
     # do garbage collection weekly to keep disk usage low
     nix.gc = {

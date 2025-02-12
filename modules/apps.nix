@@ -14,7 +14,8 @@
   homebrew = {
     enable = true;
     onActivation = {
-      autoUpdate = false;
+      autoUpdate = true;
+      upgrade = true;
       # 'zap': uninstalls all formulae(and related files) not listed here.
       cleanup = "zap";
     };
@@ -38,9 +39,9 @@
     brews = [
       "yabai"
       "tomcat"
-      "maven"
-      "pyvim"
-      "pyright"
+      /* "maven" */
+      /* "pyvim" */
+      /* "pyright" */
       #"lua-language-server"
       "gnu-tar"
       ##"mysql@8.4"

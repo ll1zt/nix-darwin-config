@@ -38,13 +38,9 @@
     # `brew install`
     brews = [
       "yabai"
-      /* "tomcat" */
-      /* "maven" */
-      /* "pyvim" */
-      /* "pyright" */
-      #"lua-language-server"
       "gnu-tar"
-      ##"mysql@8.4"
+      "fd"
+      "ripgrep"
       ];
 
     # `brew install --cask`

@@ -21,7 +21,7 @@
     };
 
     masApps = {
-      LocalSend = 1661733229;
+      /* LocalSend = 1661733229; */
       Bob = 1630034110;
       QuantumultX  = 1443988620;
       Infuse = 1136220934;
@@ -33,6 +33,7 @@
       "homebrew/services"
       "homebrew/cask-versions"
       "koekeishiya/formulae"
+      "cloud-fs/clouddrive2"
     ];
 
     # `brew install`
@@ -41,6 +42,8 @@
       "gnu-tar"
       "fd"
       "ripgrep"
+      "clouddrive2"
+      "node"
       ];
 
     # `brew install --cask`
@@ -50,11 +53,15 @@
       "wechat" # messaging tool
 
       "anki"
+      "brave-browser"
       /* "calibre" # ebook manager */
       #"chatgpt" # AI chatbot
       "chatwise"
+      "Cryptomator"
       /* "cherry-studio" */
       "intellij-idea-ce" # Java IDE
+      "logseq" #
+      "macfuse"
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service
       "tradingview" # Financial platform

@@ -8,7 +8,7 @@
         ./yabai.nix
         ./yazi.nix
         /* ./kitty.nix */
-        #./rime-squirrel.nix
+        /* /rime-squirrel.nix */
     ];
 
     home = {

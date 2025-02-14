@@ -1,4 +1,4 @@
-{ config, pkgs, lib, username, ... }:
+/* { config, pkgs, lib, username, ... }:
 
 {
   home.activation.copyRimeConfig = lib.hm.dag.entryAfter ["writeBoundary"] ''
@@ -20,4 +20,33 @@
     # 清理临时目录
     run rm -rf "$tempDir"
   '';
+} */
+
+
+
+
+{ config, pkgs, lib, username, ... }:
+
+let
+  rimeConfig = pkgs.stdenv.mkDerivation {
+    name = "rime-config";
+    src = pkgs.fetchFromGitHub {
+      owner = "ll1zt";
+      repo = "Rime";
+      rev = "main";  # or specific commit hash
+      sha256 = "sha256-8hzp2ran0rqixlk37rfdyq4jpnmf3b6a";  # temporary fake hash
+    };
+    
+    installPhase = ''
+      mkdir -p $out
+      cp -r . $out/
+    '';
+  };
+in
+{
+  home.file."Library/Rime" = {
+    source = rimeConfig;
+    recursive = true;
+    force = true;
+  };
 }

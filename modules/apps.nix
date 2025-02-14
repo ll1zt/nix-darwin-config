@@ -58,6 +58,7 @@
       #"chatgpt" # AI chatbot
       "chatwise"
       "Cryptomator"
+      "follow"
       /* "cherry-studio" */
       "intellij-idea-ce" # Java IDE
       "logseq" #

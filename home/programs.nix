@@ -22,47 +22,54 @@
 
     zsh = {
       enable = true;
-     
+      enableCompletion = true;
+      syntaxHighlighting.enable = true;
+      shellAliases = {
+        ll = "ls -l";
+      };
+      history.size = 10000;
+      initExtra = ''
+        # Load Oh My Zsh first
+        source $ZSH/oh-my-zsh.sh
+        
+        # Then load Powerlevel10k
+        if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+          source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+        fi
+        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+        
+        # Initialize autosuggestions
+        ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+        bindkey '^ ' autosuggest-accept
+      '';
+
       # 正确配置oh-my-zsh（注意连字符）
       oh-my-zsh = {
         enable = true;
-        enableCompletion = true;
         plugins = [ 
           "git"
           "web-search"
         ];
-        theme = "powerlevel10k/powerlevel10k";
+        theme = "";
       };
 
       plugins = [
         {
           name = "zsh-autosuggestions";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-autosuggestions";
-            rev = "v0.7.0";
-            sha256 = "gOG0NLlaJfotJfs+SUhGgLTNOnGLjoqnUp54V9aFJg8=";
-          };
+          src = pkgs.zsh-autosuggestions;
+          file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
         }
         {
           name = "zsh-syntax-highlighting";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-syntax-highlighting";
-            rev = "0.7.1";
-            sha256 = "gOG0NLlaJfotJfs+SUhGgLTNOnGLjoqnUp54V9aFJg8=";
-          };
+          src = pkgs.zsh-syntax-highlighting;
+          file = "share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh";
         }
         {
           name = "powerlevel10k";
-          src = pkgs.fetchFromGitHub {
-            owner = "romkatv";
-            repo = "powerlevel10k";
-            rev = "v1.19.0";
-            sha256 = "gOG0NLlaJfotJfs+SUhGgLTNOnGLjoqnUp54V9aFJg8=";
-          };
-          file = "powerlevel10k.zsh-theme";
+          src = pkgs.zsh-powerlevel10k;
+          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
         }
+
       ];
 
     };

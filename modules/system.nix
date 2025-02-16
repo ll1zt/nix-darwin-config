@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  ids.gids.nixbld = 30000;
+  ids.gids.nixbld = 30000; # set the nixbld group id to 30000
   system = {
     stateVersion = 5;
     # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.

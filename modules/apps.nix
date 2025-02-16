@@ -34,7 +34,7 @@
       "homebrew/cask-versions"
       "koekeishiya/formulae"
       "cloud-fs/clouddrive2"
-      "romkatv/powerlevel10k"
+      /* "romkatv/powerlevel10k" */
     ];
 
     # `brew install`
@@ -45,7 +45,7 @@
       "ripgrep"
       "clouddrive2"
       "node"
-      "romkatv/powerlevel10k/powerlevel10k" #theme for zsh
+      /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
       /* echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc */
       ];
 

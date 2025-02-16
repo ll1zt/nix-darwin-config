@@ -19,11 +19,56 @@
       nix-direnv.enable = true;
     };
 
-
     zsh = {
       enable = true;
+      plugins = [
+        {
+          name = "zsh-autosuggestions";
+          src = pkgs.zsh-autosuggestions;
+          file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
+        }
+        {
+          name = "zsh-autocomplete";
+          src = pkgs.zsh-autocomplete;
+          file = "share/zsh-autocomplete/zsh-autocomplete.zsh";
+        }
+        {
+          name = "zsh-syntax-highlighting";
+          src = pkgs.zsh-syntax-highlighting;
+          file = "share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh";
+        }
+        {
+          name = "powerlevel10k";
+          src = pkgs.zsh-powerlevel10k;
+          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        }
+      ];
+      oh-my-zsh = {
+        enable = true;
+        plugins = [ 
+          "git"
+          "web-search"
+          "z"
+        ];
+        theme = "";
+        extraConfig = ''
+                  # Required for autocomplete with box: https://unix.stackexchange.com/a/778868
+                  zstyle ':completion:*' completer _expand _complete _ignored _approximate _expand_alias
+                  zstyle ':autocomplete:*' default-context curcontext 
+                  zstyle ':autocomplete:*' min-input 0
+
+                  setopt HIST_FIND_NO_DUPS
+
+                  autoload -Uz compinit
+                  compinit
+
+                  setopt autocd  # cd without writing 'cd'
+                  setopt globdots # show dotfiles in autocomplete list
+        '';
+      };
       enableCompletion = true;
       syntaxHighlighting.enable = true;
+      autosuggestion.enable = true;
       shellAliases = {
         ll = "ls -l";
       };
@@ -41,36 +86,10 @@
         # Initialize autosuggestions
         ZSH_AUTOSUGGEST_STRATEGY=(history completion)
         bindkey '^ ' autosuggest-accept
+
+        # zsh-autocomplete
+        bindkey -M menuselect '^M' .accept-line # run code when selected completion
       '';
-
-      # 正确配置oh-my-zsh（注意连字符）
-      oh-my-zsh = {
-        enable = true;
-        plugins = [ 
-          "git"
-          "web-search"
-        ];
-        theme = "";
-      };
-
-      plugins = [
-        {
-          name = "zsh-autosuggestions";
-          src = pkgs.zsh-autosuggestions;
-          file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
-        }
-        {
-          name = "zsh-syntax-highlighting";
-          src = pkgs.zsh-syntax-highlighting;
-          file = "share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh";
-        }
-        {
-          name = "powerlevel10k";
-          src = pkgs.zsh-powerlevel10k;
-          file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-        }
-
-      ];
 
     };
   };  

@@ -59,6 +59,7 @@
       "chatwise"
       "Cryptomator"
       "follow"
+      "Ghostty"
       /* "cherry-studio" */
       "intellij-idea-ce" # Java IDE
       "logseq" #
@@ -82,8 +83,7 @@
       "keka" # File archiver
       "kindle" # E-book reader
       "lulu" # firewall to block unknown outgoing connections
-      #"netnewswire" # RSS reader
-      /* "nrlquaker-winbox" # MikroTik Winbox */
+      "mos"
       "parsec" # remote desktop
       "picgo" # Tool for uploading images
       "plistedit-pro" # Property list and JSON editor

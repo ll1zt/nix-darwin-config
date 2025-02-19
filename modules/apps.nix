@@ -41,10 +41,16 @@
     brews = [
       "yabai"
       "gnu-tar"
-      "fd"
-      "ripgrep"
+      "fd" #for searching files
+      "ripgrep" # for searching files
       "clouddrive2"
       "node"
+      "fzf" # for fuzzy search
+      "bat" # for syntax highlighting
+      "the_silver_searcher" #for
+      "perl" # for
+      "universal-ctags"
+      "zk" # a command-line note-taking tool
       /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
       /* echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc */
       ];

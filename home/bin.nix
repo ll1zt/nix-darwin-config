@@ -2,23 +2,8 @@
 { pkgs, ... }:
 
 {
-  home.packages = [
-    # ... 你的其他 home packages ...
-
-    (pkgs.writeShellScriptBin "on" ''
-      #!/bin/zsh
-
-      if [ -z "$1" ]; then
-        echo "Error: A file name must be set, e.g. on \"the wonderful thing about tiggers\"."
-        exit 1
-      fi
-
-      file_name=$(echo "$1" | tr ' ' '-')
-      formatted_file_name=$(date "+%Y-%m-%d")_${file_name}.md
-      cd "/Users/lllzt/Documents/0bsidian/1-Zettelkasten" || exit
-      touch "inbox/${formatted_file_name}"
-      nvim "inbox/${formatted_file_name}"
-    '')
+  home.packages = with pkgs; [
+    (writeShellScriptBin "on" (builtins.readFile ./on.sh)
   ];
 
   # ... 你的其他 Home Manager 配置 ...

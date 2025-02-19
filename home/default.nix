@@ -3,7 +3,8 @@
 {
     imports = [
         ./programs.nix
-        ./shell.nix
+        /* ./shell.nix */
+        ./bin.nix
         ./git.nix
         ./yabai.nix
         ./yazi.nix

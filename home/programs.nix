@@ -89,6 +89,20 @@
 
         # zsh-autocomplete
         bindkey -M menuselect '^M' .accept-line # run code when selected completion
+        
+        # 任何你想添加到 .zshrc 末尾的内容
+        # ...
+        alias -- ll='ls -l'
+        alias vim=nvim
+
+        alias ls='ls -lsa'
+
+
+
+        alias oo='cd $HOME/Documents/0bsidian/1-Zettelkasten/'
+        alias or='vim $HOME/Documents/0bsidian/1-Zettelkasten/inbox/*.md'
+        alias pwd="pwd | tee /dev/tty | pbcopy"
+
       '';
 
     };

@@ -51,6 +51,7 @@
       "perl" # for
       "universal-ctags"
       "zk" # a command-line note-taking tool
+      "jannis-baum/tap/vivify"
       /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
       /* echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc */
       ];

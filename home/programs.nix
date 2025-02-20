@@ -108,7 +108,7 @@
         }
 
         alias cd=cdl  # 可选：如果你想用 cd 代替 cdl
-        alias zk="cd $HOME/Documents/0bsidian/1-Zettelkasten/inbox/ && zk"
+        alias zkn="cd $HOME/Documents/0bsidian/1-Zettelkasten/inbox/ && zk new"
  
 
       '';

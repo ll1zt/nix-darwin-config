@@ -103,6 +103,13 @@
         alias or='vim $HOME/Documents/0bsidian/1-Zettelkasten/inbox/*.md'
         alias pwd="pwd | tee /dev/tty | pbcopy"
 
+        function cdl {
+          builtin cd "$@" && ls -l
+        }
+
+        alias cd=cdl  # 可选：如果你想用 cd 代替 cdl
+ 
+
       '';
 
     };

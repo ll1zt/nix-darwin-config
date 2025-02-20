@@ -4,7 +4,7 @@
     imports = [
         ./programs.nix
         /* ./shell.nix */
-        ./bin.nix
+        /* ./bin.nix */
         ./git.nix
         ./yabai.nix
         ./yazi.nix

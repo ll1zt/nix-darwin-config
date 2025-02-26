@@ -75,6 +75,8 @@
       "intellij-idea-ce" # Java IDE
       "logseq" #
       "macfuse"
+      "mocki-toki/formulae/barik"
+      "nikitabobko/tap/aerospace"
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service
       "tradingview" # Financial platform

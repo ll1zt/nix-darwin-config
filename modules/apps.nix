@@ -67,7 +67,7 @@
 
       "anki"
       "brave-browser"
-      /* "calibre" # ebook manager */
+      "calibre" # ebook manager
       #"chatgpt" # AI chatbot
       "chatwise"
       "Cryptomator"

@@ -34,6 +34,8 @@
       "homebrew/cask-versions"
       "koekeishiya/formulae"
       "cloud-fs/clouddrive2"
+      "mocki-toki/formulae"
+      "nikitabobko/tap"
       /* "romkatv/powerlevel10k" */
     ];
 
@@ -75,8 +77,8 @@
       "intellij-idea-ce" # Java IDE
       "logseq" #
       "macfuse"
-      "mocki-toki/formulae/barik"
-      "nikitabobko/tap/aerospace"
+      "barik"
+      "aerospace"
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service
       "tradingview" # Financial platform

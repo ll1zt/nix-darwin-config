@@ -82,6 +82,7 @@
       "obsidian" # Knowledge base --markdown
       "spotify" # Music streaming service
       "tradingview" # Financial platform
+      "trae"
       "ticktick" #To-do & task list manager
       "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser

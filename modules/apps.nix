@@ -55,6 +55,8 @@
       "zk" # a command-line note-taking tool
       "jannis-baum/tap/vivify"
       "octave" # a high-level language for numerical computations
+      "swiftlint" #a tool to enforce Swift style and conventions
+      "swift-format" # a tool to format Swift code
       /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
       /* echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc */
       ];
@@ -84,7 +86,7 @@
       "tradingview" # Financial platform
       "trae"
       "ticktick" #To-do & task list manager
-      "visual-studio-code" # Open-source code editor
+      # "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
       "vlc" # Media player
       "xmind" # Mind mapping tool

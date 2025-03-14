@@ -90,6 +90,7 @@
       "vivaldi" # Web browser
       "vlc" # Media player
       "xmind" # Mind mapping tool
+      "zed" # a fully offline note-taking app
 
       "aldente" # tool to limit maximum charging percentage
       "appcleaner" # Application uninstaller

@@ -52,6 +52,7 @@
       "the_silver_searcher" #for
       "perl" # for
       "universal-ctags"
+      "uv" # a library for writing networked applications
       "zk" # a command-line note-taking tool
       "jannis-baum/tap/vivify"
       "octave" # a high-level language for numerical computations

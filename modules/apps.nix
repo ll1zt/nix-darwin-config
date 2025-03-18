@@ -8,6 +8,7 @@
     just
     neofetch
     wget
+    nodejs
   ];
   environment.variables.EDITOR = "nvim";
 

@@ -46,7 +46,7 @@
       "fd" #for searching files
       "ripgrep" # for searching files
       "clouddrive2"
-      "node"
+      #"node"
       "fzf" # for fuzzy search
       "bat" # for syntax highlighting
       "the_silver_searcher" #for

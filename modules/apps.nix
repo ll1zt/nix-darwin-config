@@ -76,7 +76,7 @@
       #"chatgpt" # AI chatbot
       "chatwise"
       "Cryptomator"
-      "follow"
+      "folo"
       "Ghostty"
       /* "cherry-studio" */
       "intellij-idea-ce" # Java IDE

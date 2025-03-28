@@ -10,6 +10,7 @@
     wget
     nodejs
     uv
+    helix
   ];
   environment.variables.EDITOR = "nvim";
 

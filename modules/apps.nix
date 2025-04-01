@@ -77,6 +77,7 @@
       #"chatgpt" # AI chatbot
       "chatwise"
       "Cryptomator"
+      "dropbox"
       "folo"
       "Ghostty"
       /* "cherry-studio" */

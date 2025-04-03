@@ -116,6 +116,10 @@
       "stats" # beautiful system monitor
       "steam" # Gaming platform
       "termius" # SSH client
+
+      "figma"
+
+
       /* "wireshark" */
     ];
   };

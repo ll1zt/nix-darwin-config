@@ -4,6 +4,7 @@
 
   home.packages = with pkgs; [
     pandoc
+    go
   ];
 
   programs = {

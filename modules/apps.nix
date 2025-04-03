@@ -61,6 +61,10 @@
       "octave" # a high-level language for numerical computations
       "swiftlint" #a tool to enforce Swift style and conventions
       "swift-format" # a tool to format Swift code
+
+
+      "tomcat"
+      "mysql"
       /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
       /* echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc */
       ];

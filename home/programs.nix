@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     pandoc
     go
+    mysql
   ];
 
   programs = {

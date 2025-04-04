@@ -5,7 +5,7 @@
   home.packages = with pkgs; [
     pandoc
     go
-    mysql
+    mariadb
   ];
 
   programs = {

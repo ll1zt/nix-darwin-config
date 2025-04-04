@@ -64,7 +64,7 @@
 
 
       "tomcat"
-      #"mysql"
+      "mysql"
       /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
       /* echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc */
       ];

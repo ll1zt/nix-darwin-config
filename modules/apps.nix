@@ -11,6 +11,7 @@
     nodejs
     uv
     helix
+    maven
   ];
   environment.variables.EDITOR = "nvim";
 

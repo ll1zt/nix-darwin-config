@@ -92,9 +92,9 @@
       "barik"
       "aerospace"
       "obsidian" # Knowledge base --markdown
+      "orbstack" # a lightweight virtualization tool
       "spotify" # Music streaming service
       "tradingview" # Financial platform
-      "trae"
       "ticktick" #To-do & task list manager
       # "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
@@ -110,7 +110,7 @@
       "Itsycal" # Menu bar calendar
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
-      "kindle" # E-book reader
+      "koodo-reader" # a free and open-source eBook reader
       "lulu" # firewall to block unknown outgoing connections
       "mos"
       "parsec" # remote desktop

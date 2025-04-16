@@ -93,6 +93,7 @@
       "aerospace"
       "obsidian" # Knowledge base --markdown
       "orbstack" # a lightweight virtualization tool
+      "pronotes"
       "spotify" # Music streaming service
       "tradingview" # Financial platform
       "ticktick" #To-do & task list manager

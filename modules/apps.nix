@@ -63,7 +63,6 @@
       "octave" # a high-level language for numerical computations
       "swiftlint" #a tool to enforce Swift style and conventions
       "swift-format" # a tool to format Swift code
-      "raycast/tap/cli"
 
 
       "tomcat"

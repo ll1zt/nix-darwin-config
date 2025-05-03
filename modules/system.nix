@@ -129,7 +129,7 @@
       };
 
       loginwindow = {
-        GuestEnabled = false;  # disable guest user
+        GuestEnabled = true;  # disable guest user
         SHOWFULLNAME = false;  # show full name in login window
       };
     };

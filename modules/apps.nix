@@ -112,6 +112,7 @@
       "Itsycal" # Menu bar calendar
       "karabiner-elements" # Keyboard customiser
       "keka" # File archiver
+      "keycastr"
       "koodo-reader" # a free and open-source eBook reader
       "lulu" # firewall to block unknown outgoing connections
       "mos"

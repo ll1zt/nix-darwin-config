@@ -79,6 +79,7 @@
 
       "anki"
       "brave-browser"
+      "bitwarden"
       "calibre" # ebook manager
       #"chatgpt" # AI chatbot
       "chatwise"

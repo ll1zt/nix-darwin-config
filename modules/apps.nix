@@ -46,7 +46,6 @@
 
     # `brew install`
     brews = [
-      "bleunlock"
       "yabai"
       "gnu-tar"
       "fd" #for searching files
@@ -81,6 +80,7 @@
       "anki"
       "brave-browser"
       "bitwarden"
+      "bleunlock"
       "calibre" # ebook manager
       #"chatgpt" # AI chatbot
       "chatwise"

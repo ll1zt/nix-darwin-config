@@ -46,6 +46,7 @@
 
     # `brew install`
     brews = [
+      "bleunlock"
       "yabai"
       "gnu-tar"
       "fd" #for searching files

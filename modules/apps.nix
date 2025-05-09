@@ -64,6 +64,7 @@
       "swiftlint" #a tool to enforce Swift style and conventions
       "swift-format" # a tool to format Swift code
       "pytorch"
+      "miniconda"
 
       "tomcat"
       "opencv"

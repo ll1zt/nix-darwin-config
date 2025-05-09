@@ -64,7 +64,6 @@
       "swiftlint" #a tool to enforce Swift style and conventions
       "swift-format" # a tool to format Swift code
       "pytorch"
-      "miniconda"
 
       "tomcat"
       "opencv"
@@ -130,8 +129,7 @@
       "stats" # beautiful system monitor
       "steam" # Gaming platform
       "termius" # SSH client
-
-      "figma"
+      "miniconda"
 
 
       /* "wireshark" */

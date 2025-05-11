@@ -84,6 +84,7 @@
       "bitwarden"
       "bleunlock"
       "calibre" # ebook manager
+      "charles"
       "corretto@11"
       #"chatgpt" # AI chatbot
       "chatwise"

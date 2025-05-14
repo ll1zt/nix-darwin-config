@@ -13,6 +13,7 @@
     helix
     maven
     typescript
+    rclone
   ];
   environment.variables.EDITOR = "nvim";
 
@@ -64,7 +65,6 @@
       "swiftlint" #a tool to enforce Swift style and conventions
       "swift-format" # a tool to format Swift code
       "pytorch"
-      "rclone"
       "libfuse"
       "rust"
       "tomcat"

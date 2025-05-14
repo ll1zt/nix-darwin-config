@@ -65,7 +65,8 @@
       "swift-format" # a tool to format Swift code
       "pytorch"
       "rclone"
-
+      "libfuse"
+      "rust"
       "tomcat"
       "opencv"
       "mysql"

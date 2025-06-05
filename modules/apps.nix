@@ -13,6 +13,7 @@
     helix
     maven
     typescript
+    typescript-language-server
     rclone
     pyright
   ];

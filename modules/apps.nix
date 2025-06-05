@@ -14,6 +14,7 @@
     maven
     typescript
     rclone
+    pyright
   ];
   environment.variables.EDITOR = "nvim";
 

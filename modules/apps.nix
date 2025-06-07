@@ -17,7 +17,7 @@
     rclone
     pyright
   ];
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "hx";
 
   homebrew = {
     enable = true;
@@ -41,7 +41,6 @@
       "homebrew/services"
       "homebrew/cask-versions"
       "koekeishiya/formulae"
-      "cloud-fs/clouddrive2"
       "mocki-toki/formulae"
       "nikitabobko/tap"
       /* "romkatv/powerlevel10k" */
@@ -49,11 +48,10 @@
 
     # `brew install`
     brews = [
-      "yabai"
+      
       "gnu-tar"
       "fd" #for searching files
       "ripgrep" # for searching files
-      "clouddrive2"
       #"node"
       "fzf" # for fuzzy search
       "bat" # for syntax highlighting
@@ -98,7 +96,6 @@
       "Ghostty"
       /* "cherry-studio" */
       "intellij-idea-ce" # Java IDE
-      "logseq" #
       "macfuse"
       "barik"
       "aerospace"
@@ -107,11 +104,9 @@
       "pronotes"
       "spotify" # Music streaming service
       "tradingview" # Financial platform
-      "ticktick" #To-do & task list manager
       # "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
       "vlc" # Media player
-      "xmind" # Mind mapping tool
       "zed" # a fully offline note-taking app
 
       "aldente" # tool to limit maximum charging percentage
@@ -125,14 +120,12 @@
       "keycastr"
       "koodo-reader" # a free and open-source eBook reader
       "lulu" # firewall to block unknown outgoing connections
-      "mos"
       "parsec" # remote desktop
       "picgo" # Tool for uploading images
       "plistedit-pro" # Property list and JSON editor
       "raycast" # Control your tools with a few keystrokes
       "squirrel" # Rime input method engine
       "stats" # beautiful system monitor
-      "steam" # Gaming platform
       "termius" # SSH client
       "miniconda"
 

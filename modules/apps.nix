@@ -128,6 +128,7 @@
       "stats" # beautiful system monitor
       "termius" # SSH client
       "miniconda"
+      "google-drive"
 
 
       /* "wireshark" */

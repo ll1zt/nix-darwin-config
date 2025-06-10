@@ -104,7 +104,7 @@
       "pronotes"
       "spotify" # Music streaming service
       "tradingview" # Financial platform
-      # "visual-studio-code" # Open-source code editor
+      "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
       "vlc" # Media player
       "zed" # a fully offline note-taking app

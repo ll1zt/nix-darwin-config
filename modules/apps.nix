@@ -65,9 +65,7 @@
       "swiftlint" #a tool to enforce Swift style and conventions
       "swift-format" # a tool to format Swift code
       "pytorch"
-      "libfuse"
       "rust"
-      "tomcat"
       "opencv"
       "mysql"
       /* "romkatv/powerlevel10k/powerlevel10k" #theme for zsh */
@@ -95,7 +93,6 @@
       "folo"
       "Ghostty"
       /* "cherry-studio" */
-      "intellij-idea-ce" # Java IDE
       "macfuse"
       "barik"
       "aerospace"
@@ -103,7 +100,6 @@
       "orbstack" # a lightweight virtualization tool
       "pronotes"
       "spotify" # Music streaming service
-      "tradingview" # Financial platform
       "visual-studio-code" # Open-source code editor
       "vivaldi" # Web browser
       "vlc" # Media player
@@ -120,8 +116,6 @@
       "keycastr"
       "koodo-reader" # a free and open-source eBook reader
       "lulu" # firewall to block unknown outgoing connections
-      "parsec" # remote desktop
-      "picgo" # Tool for uploading images
       "plistedit-pro" # Property list and JSON editor
       "raycast" # Control your tools with a few keystrokes
       "squirrel" # Rime input method engine

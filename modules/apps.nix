@@ -122,6 +122,7 @@
       "stats" # beautiful system monitor
       "termius" # SSH client
       "miniconda"
+      "v2rayu"
 
       /* "wireshark" */
     ];

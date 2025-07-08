@@ -17,6 +17,7 @@
     rclone
     pyright
     markdown-oxide
+    tpnote
   ];
   environment.variables.EDITOR = "hx";
 

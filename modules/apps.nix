@@ -16,6 +16,7 @@
     typescript-language-server
     rclone
     pyright
+    markdown-oxide
   ];
   environment.variables.EDITOR = "hx";
 
@@ -122,7 +123,6 @@
       "stats" # beautiful system monitor
       "termius" # SSH client
       "miniconda"
-      "v2rayx"
 
       /* "wireshark" */
     ];

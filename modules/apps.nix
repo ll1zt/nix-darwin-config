@@ -18,6 +18,7 @@
     pyright
     markdown-oxide
     tpnote
+    ltex-ls
   ];
   environment.variables.EDITOR = "hx";
 

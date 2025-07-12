@@ -74,7 +74,7 @@
         ll = "ls -l";
       };
       history.size = 10000;
-      initExtra = ''
+      initContent = ''
         # Load Oh My Zsh first
         source $ZSH/oh-my-zsh.sh
         

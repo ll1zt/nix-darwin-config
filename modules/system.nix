@@ -4,7 +4,7 @@
   ids.gids.nixbld = 30000; # set the nixbld group id to 30000
   system = {
     primaryUser = "lllzt";
-    stateVersion = 25.05;
+    stateVersion = 5;
     # activationScripts are executed every time you boot the system or run `nixos-rebuild` / `darwin-rebuild`.
     activationScripts.postSystemActivation.text = '' # <--- CHANGED TO postSystemActivation
       # activateSettings -u will reload the settings from the database and apply them to the current session,

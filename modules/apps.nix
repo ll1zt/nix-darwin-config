@@ -25,6 +25,7 @@
     ripgrep
     tig
     w3m
+    prettier
     
   ];
   environment.variables.EDITOR = "hx";

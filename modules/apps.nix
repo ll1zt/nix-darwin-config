@@ -26,6 +26,11 @@
     tig
     w3m
     prettier
+    taplo
+    marksman
+    yaml-language-server
+    
+
     
   ];
   environment.variables.EDITOR = "hx";

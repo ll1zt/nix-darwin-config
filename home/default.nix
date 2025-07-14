@@ -8,6 +8,7 @@
         ./git.nix
         ./yabai.nix
         ./yazi.nix
+        ./packages.nix
         /* /rime-squirrel.nix */
     ];
 

@@ -134,7 +134,7 @@
       "lulu" # firewall to block unknown outgoing connections
       "plistedit-pro" # Property list and JSON editor
       "raycast" # Control your tools with a few keystrokes
-      "squirrel" # Rime input method engine
+      "squirrel-app" # Rime input method engine
       "stats" # beautiful system monitor
       "termius" # SSH client
       "miniconda"

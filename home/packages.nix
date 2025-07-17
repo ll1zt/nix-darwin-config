@@ -1,8 +1,13 @@
 { config, pkgs, ... }:
 
 let
-  # 使用 stdenv.mkDerivation 直接构建
-  noteLinkJanitor = pkgs.stdenv.mkDerivation {
+  # Import the internal buildYarnPackage helper from the nixpkgs source.
+  # This is the correct pattern when a builder isn't exposed at the top level.
+  buildYarnPackage = pkgs.callPackage (
+    "${pkgs.path}/pkgs/development/node-packages/build-yarn-package.nix"
+  ) {};
+
+  noteLinkJanitor = buildYarnPackage {
     pname = "note-link-janitor";
     version = "0.0.1";
 
@@ -13,48 +18,43 @@ let
       hash = "sha256-j12WuCsdiLM/nFi/0u0VaWCAuyziFZZE3fAo0u/d5HI=";
     };
 
-    buildInputs = with pkgs; [ nodejs_22 ];
+    nativeBuildInputs = [
+      pkgs.typescript
+      pkgs.makeWrapper
+    ];
+
+    # This is the hash for the dependencies in yarn.lock.
+    # The build will fail once with a placeholder, telling you the correct hash.
+    yarnDepsHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
 
     buildPhase = ''
-      # 如果有 package.json，尝试安装依赖
-      if [ -f package.json ]; then
-        npm install --no-bin-links --ignore-scripts || true
-      fi
-      
-      # 如果有 TypeScript 配置，尝试编译
-      if [ -f tsconfig.json ]; then
-        npx tsc || true
-      fi
+      runHook preBuild
+      npx tsc
+      runHook postBuild
     '';
 
     installPhase = ''
-      mkdir -p $out/bin $out/lib/node_modules/note-link-janitor
-      
-      # 复制所有文件
-      cp -r . $out/lib/node_modules/note-link-janitor/
-      
-      # 创建可执行文件
-      cat > $out/bin/note-link-janitor << 'EOF'
-#!/bin/sh
-exec ${pkgs.nodejs_22}/bin/node $out/lib/node_modules/note-link-janitor/index.js "$@"
-EOF
-      chmod +x $out/bin/note-link-janitor
+      runHook preInstall
+      mkdir -p $out/lib/node_modules/note-link-janitor $out/bin
+
+      # Copy compiled code and dependencies
+      cp -r dist node_modules $out/lib/node_modules/note-link-janitor/
+
+      # Create a wrapper script to run the application
+      makeWrapper ${pkgs.nodejs_22}/bin/node $out/bin/note-link-janitor \
+        --add-flags $out/lib/node_modules/note-link-janitor/dist/index.js
+      runHook postInstall
     '';
 
     meta = with pkgs.lib; {
       description = "Maintains backlink structure among interlinked Markdown notes";
       homepage = "https://github.com/andymatuschak/note-link-janitor";
       license = licenses.mit;
-      maintainers = [];
     };
   };
 in
 {
-  # 将 noteLinkJanitor 添加到您的用户包列表
   home.packages = with pkgs; [
-    # ... 您现有的其他包
     noteLinkJanitor
   ];
-
-  # 其他 home-manager 配置...
 }

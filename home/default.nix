@@ -8,14 +8,14 @@
         ./git.nix
         ./yabai.nix
         ./yazi.nix
-        ./packages.nix
+        # ./packages.nix
         /* /rime-squirrel.nix */
     ];
 
     home = {
         username = username;
         homeDirectory = "/Users/${username}";
-        stateVersion = "24.05";
+        stateVersion = "25.11";
     };
 
   # Let Home Manager install and manage itself.

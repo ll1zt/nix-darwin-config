@@ -29,9 +29,9 @@
     taplo
     marksman
     yaml-language-server
-    
-
-    
+    # nodePackages.npm
+    yarn
+        
   ];
   environment.variables.EDITOR = "hx";
 
